@@ -3,8 +3,6 @@
 
  ---
 
-1. Case Study Introduction and Objective
-2. 
 1.1 Background and Overview
 Before modeling and advanced analytics, insurance premiums were typically predicted using manual, rule-of-thumb methods based on basic demographic factors (age, gender, health conditions) and historical claims data. Actuaries used statistical tables, industry benchmarks, and general risk assessments to estimate premiums, often relying on broad assumptions rather than personalized data-driven insights.
 Health insurance premium predictions using machine learning models are crucial for accurately assessing risk and setting appropriate premiums. By leveraging data such as age, medical history, lifestyle, and other factors, these models can help insurers predict an individual's future healthcare costs. This leads to more personalized and fair pricing, ensuring that individuals with higher health risks are charged premiums reflecting their needs, while those with lower risks aren't overcharged. Machine learning models also enhance operational efficiency by automating the pricing process, improving profitability, and enabling better risk management for insurers. Additionally, they ensure competitive and sustainable pricing in the market.
