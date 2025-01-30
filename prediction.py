@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import pickle
 from flask import Flask, request, jsonify
 
@@ -10,6 +11,19 @@ with open("best_random_forest_model.pkl", 'rb') as f:
 
 with open("scaler.pkl", 'rb') as f:
     scaler = pickle.load(f)
+
+# Define the column names used during model training
+columns = [
+    'Age', 
+    'Diabetes', 
+    'BloodPressureProblems', 
+    'AnyTransplants', 
+    'AnyChronicDiseases', 
+    'Height',
+    'Weight', 
+    'HistoryOfCancerInFamily', 
+    'NumberOfMajorSurgeries'
+]
 
 # Sample home route
 @app.route("/")
@@ -41,8 +55,11 @@ def prediction():
             ins_req["NumberOfMajorSurgeries"]
         ]
         
-        # Scale the input features using the pre-loaded scaler
-        scaled_input = scaler.transform([query])
+        # Convert query list to a DataFrame with proper column names
+        query_df = pd.DataFrame([query], columns=columns)
+
+        # Scale the input data using the fitted scaler
+        scaled_input = scaler.transform(query_df)
 
         # Convert the scaled input into a numpy array and reshape for prediction
         features_array = np.array(scaled_input).reshape(1, -1)
