@@ -83,9 +83,10 @@ def prediction():
 
         # Return the prediction result as a JSON response
         return jsonify({
-            "Predicted insurance price": round(result[0], 2),
-            "95% Prediction Interval": (round(lower_ci, 2), round(upper_ci, 2))
-        })
+            "Predicted insurance price": "Rs. " + str(round(result[0], 2)),
+            "95% Prediction Interval": (
+            "Rs. " + str(round(lower_ci, 2)),
+            "Rs. " + str(round(upper_ci, 2)))})
     
     except Exception as e:
         # Handle any error and return it as a JSON response
