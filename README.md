@@ -105,5 +105,5 @@ When user inputs their data and clicks on Predict Premium, they are shown the Pr
 
 - Github link to access project: https://github.com/KeertiJoshi-9/Insurance-Cost-Prediction
 - Tableau Link for Data Visualization: https://public.tableau.com/app/profile/keerti.j1682/viz/InsuranceCostPredictionProject/InsuranceCostPrediction
-- Medium Blog:
-- Video for breif explanation and analysis/ insights: 
+- Medium Blog: https://medium.com/@keertijoshi999/health-insurance-premium-prediction-using-machine-learning-models-1bd9057569d4 
+- Video for breif explanation and analysis/ insights: https://www.loom.com/share/6d388c7fbdab4925962e5ccf653dc905?sid=6c1baad9-65eb-43f1-93da-8e36306d252e 
